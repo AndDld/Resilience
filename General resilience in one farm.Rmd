@@ -1,0 +1,55 @@
+---
+title: "General resilience in one farm"
+author: "Andrea Delledonne"
+date: "Sep 14, 2024"
+output:
+  html_notebook: default
+  html_document:
+    highlight: tango
+    df_print: paged
+  pdf_document: default
+---
+# Very brief introduction
+
+There are several definitions of resilience but...
+
+**the ability to be minimally affected by disturbances and/or to rapidly return to a stable state after a disturbance**  (Colditz and Hine, 2016)
+
+After the observations that diseases and environmental changes can influence the productivity of animals, assuming fixed the conditions of farming, **longitudinal data** have been starting to face an intensive use.
+
+---
+
+![Berghof 2019.](fig2Berghof.jpg){width=70%}
+
+---
+
+# Fedeli's farm
+
+In the same way, we are going to analyze the data of a farm in Lombardy (Lombardia), Italy, to understand the resilience of those cows.
+
+Editing steps | N. obs. | N. cows | N. eff. cows |
+--- | --- | --- | --- |
+Initial data set | 557,336 | | |
+Remove NA daily rec. | 483,025 | 1,823 | |
+Remove first 10 DIM | 420,395 | 1,823 | |
+Keep only o. p. 1 2 3 | 401,906 | 1,807 | |
+O. p. 1 | 214,847 | 895 |  |
+Keep n.DIM min 295 | 179,402 | 631 | 629 |
+O. p. 2 | 130,180 | 554 | |
+Keep... | 102,968 | 361 | 356 |
+Lactation 3 | 56,879 | 264 | |
+Keep... | 38,367 | 136 | 135 |
+
+---
+
+# How to infer general resilience?
+
+**Assuming** that the daily milk production per se is a good proxy of the general resilience.
+
+Wt still miss something... a reference system.  
+A curve that is assumed to be unperturbed.
+
+```{r}
+
+```
+
